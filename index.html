@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Sue Arena | bytherules</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="card">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-glow"></div>
+    <div class="logo">
+      <img src="images/logo.png" alt="bytherules" class="logo-img">
+    </div>
+  </div>
+
+  <!-- AVATAR -->
+  <div class="avatar-wrap">
+    <div class="avatar-ring">
+      <img
+        src="images/avatar.png"
+        alt="Sue Arena"
+        onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#F2845C,#E85C2C);display:flex;align-items:center;justify-content:center;font-family:serif;font-size:36px;color:white\'>SA</div>'"
+      >
+    </div>
+  </div>
+
+  <!-- BODY -->
+  <div class="body">
+    <h1 class="name">Sue Arena</h1>
+    <p class="role">Network Partnerships Manager</p>
+
+    <!-- SAVE CONTACT -->
+    <button class="save-btn" onclick="saveContact()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      Save Contact
+    </button>
+
+    <!-- CONTACT ROWS -->
+    <div class="contacts">
+
+      <a class="contact-row" href="tel:0422377552" onclick="makeCall(event)">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.2 14.4C14.5 14.1 14.9 14 15.3 14.2C16.5 14.6 17.8 14.8 19 14.8C19.6 14.8 20 15.2 20 15.8V19C20 19.6 19.6 20 19 20C10.2 20 3 12.8 3 4C3 3.4 3.4 3 4 3H7.5C8.1 3 8.5 3.4 8.5 4C8.5 5.2 8.7 6.5 9.1 7.7C9.2 8.1 9.1 8.5 8.8 8.8L6.6 10.8Z" fill="#E85C2C"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <div class="contact-label">Mobile</div>
+          <div class="contact-value">0422 377 552</div>
+        </div>
+      </a>
+
+      <a class="contact-row" href="mailto:sue.arena@bytherules.com.au" onclick="sendEmail(event)">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="#E85C2C"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">sue.arena@bytherules.com.au</div>
+        </div>
+      </a>
+
+      <a class="contact-row" href="https://maps.google.com/?q=GPO+Box+2928+Brisbane+QLD+4001" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="#E85C2C"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <div class="contact-label">Address</div>
+          <div class="contact-value">GPO Box 2928, Brisbane Qld 4001</div>
+        </div>
+      </a>
+
+      <a class="contact-row" href="https://www.bytherules.com.au" target="_blank" rel="noopener">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 18H4V8H20V18ZM6 14H18V16H6V14ZM6 10H18V12H6V10Z" fill="#E85C2C"/>
+          </svg>
+        </div>
+        <div class="contact-info">
+          <div class="contact-label">Website</div>
+          <div class="contact-value">www.bytherules.com.au</div>
+        </div>
+      </a>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- SOCIAL -->
+    <div class="social-row">
+
+      <a class="social-btn" href="https://www.facebook.com/bytherules" target="_blank" rel="noopener" title="Facebook">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#E85C2C"/>
+        </svg>
+      </a>
+
+      <a class="social-btn" href="https://www.linkedin.com/company/bytherules" target="_blank" rel="noopener" title="LinkedIn">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#E85C2C"/>
+        </svg>
+      </a>
+
+      <a class="social-btn" href="https://www.youtube.com/@bytherules" target="_blank" rel="noopener" title="YouTube">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z" fill="#E85C2C"/>
+        </svg>
+      </a>
+
+      <a class="social-btn" href="https://www.instagram.com/bytherules" target="_blank" rel="noopener" title="Instagram">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z" fill="#E85C2C"/>
+        </svg>
+      </a>
+
+    </div>
+
+    <!-- CTA BUTTONS -->
+    <div class="cta-row">
+      <a class="cta-btn cta-call" href="tel:0422377552" onclick="makeCall(event)">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.6 10.8C7.8 13.2 9.8 15.2 12.2 16.4L14.2 14.4C14.5 14.1 14.9 14 15.3 14.2C16.5 14.6 17.8 14.8 19 14.8C19.6 14.8 20 15.2 20 15.8V19C20 19.6 19.6 20 19 20C10.2 20 3 12.8 3 4C3 3.4 3.4 3 4 3H7.5C8.1 3 8.5 3.4 8.5 4C8.5 5.2 8.7 6.5 9.1 7.7C9.2 8.1 9.1 8.5 8.8 8.8L6.6 10.8Z" fill="white"/>
+        </svg>
+        Make a Call
+      </a>
+
+      <a class="cta-btn cta-email" href="mailto:sue.arena@bytherules.com.au" onclick="sendEmail(event)">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white"/>
+        </svg>
+        Send Email
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast">✓ Contact saved!</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
